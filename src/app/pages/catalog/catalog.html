@@ -1,5 +1,5 @@
-<div class="catalog-container">
-  <app-film-card />
-  <app-film-card />
-  <app-film-card />
+<div class="catalog__wrapper">
+  @for (film of films(); track film.id) {
+    <app-film-card [film]="film" />
+  }
 </div>

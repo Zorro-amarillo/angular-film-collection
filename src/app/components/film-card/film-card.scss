@@ -1,5 +1,6 @@
-.film-card-container {
-  width: 100px;
-  height: 100px;
+.film-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
   border: 1px solid grey;
 }

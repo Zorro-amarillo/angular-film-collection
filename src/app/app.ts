@@ -4,10 +4,11 @@ import { Header } from './layout/header/header';
 import { Footer } from './layout/footer/footer';
 import { Breadcrumbs } from './layout/breadcrumbs/breadcrumbs';
 import { Catalog } from './pages/catalog/catalog';
+import { FilmDetails } from './pages/film-details/film-details';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, Breadcrumbs, Catalog],
+  imports: [RouterOutlet, Header, Footer, Breadcrumbs, Catalog, FilmDetails],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

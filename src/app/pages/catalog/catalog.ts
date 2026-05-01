@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FilmCard } from '../../components/film-card/film-card';
+import { Film } from '../../models/film';
+
+import filmsData from '../../data/films.json';
 
 @Component({
   selector: 'app-catalog',
@@ -7,4 +10,6 @@ import { FilmCard } from '../../components/film-card/film-card';
   templateUrl: './catalog.html',
   styleUrl: './catalog.scss',
 })
-export class Catalog {}
+export class Catalog {
+  films = signal<Film[]>(filmsData);
+}
