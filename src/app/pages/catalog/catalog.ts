@@ -1,8 +1,7 @@
-import { Component, signal } from '@angular/core';
-import { FilmCard } from '../../components/film-card/film-card';
-import { Film } from '../../models/film';
+import { Component, inject } from '@angular/core';
 
-import filmsData from '../../data/films.json';
+import { FilmCard } from '../../components/film-card/film-card';
+import { FilmService } from '../../services/film.service';
 
 @Component({
   selector: 'app-catalog',
@@ -11,5 +10,7 @@ import filmsData from '../../data/films.json';
   styleUrl: './catalog.scss',
 })
 export class Catalog {
-  films = signal<Film[]>(filmsData);
+  private filmService = inject(FilmService);
+
+  films = this.filmService.getFilms();
 }

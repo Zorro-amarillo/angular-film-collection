@@ -1,1 +1,9 @@
-<p>film-details works!</p>
+<div class="film-details">
+  <img [src]="currentFilm?.posterUrl" [alt]="currentFilm?.title" />
+  <h2>{{ currentFilm?.title }}</h2>
+  <p>{{ currentFilm?.year }}</p>
+  <p>{{ currentFilm?.genre }}</p>
+  <p>{{ currentFilm?.rating }}</p>
+  <p>{{ currentFilm?.duration }}</p>
+  <p>{{ currentFilm?.description }}</p>
+</div>

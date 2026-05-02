@@ -5,4 +5,6 @@ export interface Film {
   year: number;
   genre: string;
   rating: number;
+  duration: number;
+  description: string;
 }
