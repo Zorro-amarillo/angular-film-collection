@@ -1,1 +1,5 @@
-<a href="" class="breadcrumbs">breadcrumbs</a>
+<a routerLink="/" class="breadcrumbs">Home</a>
+
+@if (nestedPage()) {
+  <span> > {{ nestedPage() }}</span>
+}
