@@ -1,8 +1,18 @@
 <div class="search">
-  <input type="text" name="film-search" id="films" placeholder="Search Film" appAutofocus />
+  <input
+    type="text"
+    name="film-search"
+    id="films"
+    placeholder="Search Film"
+    appAutofocus
+    [value]="searchInput()"
+    (input)="onTextInput($event)"
+  />
 </div>
 <div class="catalog__wrapper">
-  @for (film of films(); track film.id) {
+  @for (film of foundFilms(); track film.id) {
     <app-film-card [film]="film" />
+  } @empty {
+    <p>Nothing found</p>
   }
 </div>
