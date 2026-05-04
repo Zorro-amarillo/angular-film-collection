@@ -1,9 +1,9 @@
 <div class="film-details">
   <img [src]="currentFilm?.posterUrl" [alt]="currentFilm?.title" />
   <h2>{{ currentFilm?.title }}</h2>
-  <p>{{ currentFilm?.year }}</p>
-  <p>{{ currentFilm?.genre }}</p>
-  <p>{{ currentFilm?.rating }}</p>
-  <p>{{ currentFilm?.duration }}</p>
-  <p>{{ currentFilm?.description }}</p>
+  <p>Year: {{ currentFilm?.year }}</p>
+  <p>Genre: {{ currentFilm?.genre }}</p>
+  <p>Rating: {{ currentFilm?.rating }}</p>
+  <p>Duration: {{ currentFilm?.duration }} min</p>
+  <p>Description: {{ currentFilm?.description }}</p>
 </div>
