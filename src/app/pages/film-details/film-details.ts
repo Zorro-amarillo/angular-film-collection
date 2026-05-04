@@ -2,10 +2,11 @@ import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FilmService } from '../../services/film.service';
 import { BreadcrumbsService } from '../../services/breadcrumbs.service';
+import { DurationPipe } from '../../pipes/duration.pipe';
 
 @Component({
   selector: 'app-film-details',
-  imports: [],
+  imports: [DurationPipe],
   templateUrl: './film-details.html',
   styleUrl: './film-details.scss',
 })
