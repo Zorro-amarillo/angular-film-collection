@@ -1,3 +1,6 @@
+<div class="search">
+  <input type="text" name="film-search" id="films" placeholder="Search Film" appAutofocus />
+</div>
 <div class="catalog__wrapper">
   @for (film of films(); track film.id) {
     <app-film-card [film]="film" />
