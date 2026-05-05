@@ -1,0 +1,7 @@
+<a [routerLink]="['/films', film().id]" class="film-card__link">
+  <img [src]="film().posterUrl" [alt]="film().title" />
+  <h2>{{ film().title }}</h2>
+  <p>{{ film().year }}</p>
+  <p>{{ film().genre }}</p>
+  <p>{{ film().rating }}</p>
+</a>
