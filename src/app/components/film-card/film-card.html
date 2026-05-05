@@ -5,3 +5,6 @@
   <p>{{ film().genre }}</p>
   <p>{{ film().rating }}</p>
 </a>
+<button (click)="onToggleFavorite()" class="favorite-btn">
+  {{ film().isFavorite ? '❤️' : '🩶' }}
+</button>
