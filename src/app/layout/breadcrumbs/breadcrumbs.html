@@ -1,5 +1,5 @@
 <a routerLink="/" class="breadcrumbs">Home</a>
 
 @if (nestedPage()) {
-  <span> > {{ nestedPage() }}</span>
+  <span class="breadcrumbs__current-film"> > {{ nestedPage() }}</span>
 }

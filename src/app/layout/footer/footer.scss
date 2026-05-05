@@ -1,7 +1,26 @@
+:host {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
 .footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  border-top: 1px solid grey;
+
+  .footer__copyright {
+    color: #1e3a8a;
+  }
+
+  .footer__github-link {
+    color: #1e40af;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
 }

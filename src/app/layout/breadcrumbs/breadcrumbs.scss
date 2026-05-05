@@ -1,4 +1,14 @@
 .breadcrumbs {
   display: inline-block;
-  margin-bottom: 30px;
+  margin: 20px 0;
+  color: #3b82f6;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.breadcrumbs__current-film {
+  color: #64748b;
 }
