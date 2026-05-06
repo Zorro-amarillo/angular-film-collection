@@ -19,7 +19,11 @@ export const routes: Routes = [
     component: About,
   },
   {
-    path: '**',
+    path: '404',
     component: NotFound,
+  },
+  {
+    path: '**',
+    redirectTo: '/404',
   },
 ];
