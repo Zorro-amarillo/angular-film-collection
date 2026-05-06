@@ -1,59 +1,83 @@
-# AngularFilmCollection
+# 🎬 Film Collection
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.8.
+A small movie catalog application built with Angular 20+ as an introductory project to core Angular concepts: standalone components, routing, directives, pipes and signals.
 
-## Development server
+> **Note:** This project uses Angular Signals for all reactivity. No RxJS.
 
-To start a local development server, run:
+## ✨ Features
 
-```bash
-ng serve
+- **Film Catalog** - displays all films from mock data
+- **Real-time Search** - filter films by title in real-time
+- **Favorites** - add/remove films to favorites list
+- **Film Details** - view complete film information
+- **Breadcrumbs** - navigate through pages with clickable links
+- **404 Page** - handles unknown routes
+- **Autofocus** - search input is automatically focused on page load
+
+## 🛠️ Tech Stack
+
+- Angular 20+ (standalone components, no NgModules)
+- TypeScript (strict mode)
+- Angular Signals (signal, computed, input, output)
+- Angular Router with new control flow (@if, @for)
+- Plain CSS/SCSS for styling (no UI libraries)
+
+## 📋 Prerequisites
+
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [Angular CLI](https://angular.dev/tools/cli) installed globally:
+
+```
+npm install -g @angular/cli
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🌿 Branches & Review Guide
 
-## Code scaffolding
+| Branch | Description |
+|--------|-------------|
+| `dev` | Core features - completed before the deadline |
+| `dev-part2` | **Full version** - includes all features (`dev` + post-deadline improvements) |
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+> **For review:**
 
-```bash
-ng generate component component-name
-```
+&gt; The `dev` branch contains the version completed before the deadline.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+&gt; The `dev-part2` branch contains the complete version of the project.
 
-```bash
-ng generate --help
-```
+## 🚀 Getting Started
 
-## Building
+### ⚙️ Installation
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+1. To run the latest version:
 
 ```bash
-ng test
+git clone https://github.com/Zorro-amarillo/angular-film-collection.git
+cd angular-film-collection
+git checkout dev-part2
+npm install
+npm start
 ```
 
-## Running end-to-end tests
+2. Open your browser and navigate to [http://localhost:4200/](http://localhost:4200/).
+The application will automatically reload if you change any of the source files.
 
-For end-to-end (e2e) testing, run:
+## 📜 Available Scripts
 
-```bash
-ng e2e
-```
+| Script   | Command                                               | Description                                              |
+| -------- | ----------------------------------------------------- | -------------------------------------------------------- |
+| `start`  | `ng serve`                                            | Starts the development server at `http://localhost:4200` |
+| `build`  | `ng build`                                            | Compiles the application for production                  |
+| `watch`  | `ng build --watch --configuration development`        | Builds in watch mode (rebuilds on file changes)          |
+| `test`   | `ng test`                                             | Runs unit tests                   |
+| `lint`   | `ng lint`                                             | Runs ESLint to check code for errors and style issues    |
+| `format` | `prettier --write "src/**/*.{ts,html,scss,css,json}"` | Formats all source files with Prettier                   |
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 👤 Author
 
-## Additional Resources
+Yana Malakhova
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+GitHub: [@zorro-amarillo](https://github.com/Zorro-amarillo)
+
+Year: 2026
+
+This project was created as an assignment for the [Rolling Scopes School Angular course](https://rs.school/courses/angular).

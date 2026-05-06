@@ -1,0 +1,9 @@
+.about__link {
+  color: #666eff;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #757cff;
+  }
+}

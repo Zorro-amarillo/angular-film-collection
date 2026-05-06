@@ -1,7 +1,10 @@
 <a [routerLink]="['/films', film().id]" class="film-card__link">
-  <img [src]="film().posterUrl" [alt]="film().title" />
-  <h2>{{ film().title }}</h2>
-  <p>{{ film().year }}</p>
-  <p>{{ film().genre }}</p>
-  <p>{{ film().rating }}</p>
+  <img [src]="film().posterUrl" [alt]="film().title" class="film-card__poster" />
+  <h2 class="film-card__title">{{ film().title }}</h2>
+  <p>Year: {{ film().year }}</p>
+  <p>Genre: {{ film().genre }}</p>
+  <p>Rating: {{ film().rating }}</p>
 </a>
+<button (click)="onToggleFavorite()" class="favorite-btn">
+  {{ film().isFavorite ? '❤️' : '🩶' }}
+</button>

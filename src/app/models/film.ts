@@ -7,4 +7,5 @@ export interface Film {
   rating: number;
   duration: number;
   description: string;
+  isFavorite: boolean;
 }

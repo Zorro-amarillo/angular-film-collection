@@ -1,18 +1,34 @@
+:host {
+  background: #3b82f6;
+  color: white;
+}
+
 .header-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
-  border-bottom: 1px solid grey;
 
   .nav-list {
     display: flex;
     justify-content: center;
     gap: 50px;
     padding: 0;
+    list-style: none;
 
     &__item {
-      list-style: none;
+      transition: opacity 0.3s;
+
+      .nav-link {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1rem;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 }

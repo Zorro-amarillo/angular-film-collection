@@ -7,8 +7,10 @@
     appAutofocus
     [value]="searchInput()"
     (input)="onTextInput($event)"
+    class="search__input"
   />
 </div>
+
 <div class="catalog__wrapper">
   @for (film of foundFilms(); track film.id) {
     <app-film-card [film]="film" />
